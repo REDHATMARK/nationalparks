@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Provides information about this backend
+ * Provides information about this backend....
  *
  * Created by jmorales on 26/09/16.
  */
@@ -17,6 +17,6 @@ public class BackendController{
 
     @RequestMapping(method = RequestMethod.GET, value = "/", produces = "application/json")
     public Backend get() {
-        return new Backend("nationalparks","National Parks", new Coordinates("47.039304", "14.505178"), 4);
+        return new Backend("nationalparks","World Parks", new Coordinates("47.039304", "14.505178"), 4);
     }
 }
